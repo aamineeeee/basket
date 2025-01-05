@@ -1,0 +1,42 @@
+/* Container des boxes */
+.important-data-container {
+  display: flex;
+}
+
+.boxes {
+  width: 250px; /* Largeur de la barre verticale */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;  /* Fond blanc pour les boxes */
+  border-right: 2px solid #ccc;
+  margin-left: 20px; /* Augmenter l'espace entre la barre horizontale et la barre verticale */
+}
+
+.box {
+  padding: 10px;
+  margin-bottom: 12px;
+margin-top: 10px;
+  background-color: #fff; /* Fond blanc par défaut */
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;  /* Couleur du texte par défaut */
+  transition: background-color 0.3s, color 0.3s; /* Transition de couleur */
+}
+
+/* Lorsque l'on survole une box */
+.box:hover {
+  background-color: #f1f1f1;  /* Changer la couleur de fond au survol */
+}
+
+/* Style lorsque la box est sélectionnée */
+.box.active {
+  background-color: #04A9F5; /* Utiliser la couleur bleue #04A9F5 */
+}
+
+.box.active h3 {
+  color: white;  /* Changer la couleur du texte en blanc lorsque la box est active */
+}
